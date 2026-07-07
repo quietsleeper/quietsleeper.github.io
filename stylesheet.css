@@ -102,11 +102,57 @@ h2 {
   font-weight: 700;
 }
 
+.teaser-pan {
+  width: 220px;
+  height: 120px;
+  background-repeat: repeat-x;
+  background-size: auto 100%;
+  background-position: 0 50%;
+  border-radius: 2px;
+  animation: teaser-scroll 8s linear infinite;
+  animation-play-state: paused;
+}
+
+.teaser-pan:hover {
+  animation-play-state: running;
+}
+
+@keyframes teaser-scroll {
+  from {
+    background-position: 0 50%;
+  }
+
+  to {
+    background-position: -480px 50%;
+  }
+}
+
 .name {
   padding-top: 20px;
   margin: 0;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 32px;
+}
+
+.bio p {
+  line-height: 1.55;
+  margin: 0 0 10px;
+  text-align: left;
+}
+
+.bio p.name {
+  margin: 0 0 14px;
+  text-align: center;
+}
+
+.bio-line {
+  display: block;
+}
+
+@media (max-width: 640px) {
+  .bio-line {
+    display: inline;
+  }
 }
 
 .one {
