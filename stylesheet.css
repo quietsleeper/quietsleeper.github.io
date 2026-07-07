@@ -110,11 +110,6 @@ h2 {
   background-position: 0 50%;
   border-radius: 2px;
   animation: teaser-scroll 8s linear infinite;
-  animation-play-state: paused;
-}
-
-.teaser-pan:hover {
-  animation-play-state: running;
 }
 
 @keyframes teaser-scroll {
